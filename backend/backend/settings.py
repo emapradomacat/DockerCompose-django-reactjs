@@ -19,50 +19,52 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.1/howto/deployment/checklist/
-if not env('SECRET_KEY'):
-    warnings.warn((
-                      "Please define SECRET_KEY before importing {0}, as a fallback "
-                      "for when the environment variable is not available."
-                  ).format(__name__))
-else:
-    SECRET_KEY = env('SECRET_KEY')
+#Agrego la siguiente linea
+SECRET_KEY = {#)vo!Gf8cxO|xaD,R9<,p9uYE[qp<aD@d+9Ll-`x65Zc_ESup
+#if not env('SECRET_KEY'):
+#    warnings.warn((
+#                      "Please define SECRET_KEY before importing {0}, as a fallback "
+#                      "for when the environment variable is not available."
+#                  ).format(__name__))
+#else:
+#    SECRET_KEY = env('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = env("DJANGO_DEBUG", True)
+#DEBUG = get_value_env("DJANGO_DEBUG", True)
 
-ALLOWED_HOSTS = ['*']
+#ALLOWED_HOSTS = ['*']
 
 
 #############################################
 #  Application definition
 #############################################
 
-INSTALLED_APPS = [
-    # Django apps
-    'django.contrib.admin',
-    'django.contrib.auth',
-    'django.contrib.contenttypes',
-    'django.contrib.sessions',
-    'django.contrib.messages',
-    'django.contrib.sites',
-    'django.contrib.staticfiles',
+#INSTALLED_APPS = [
+#    # Django apps
+#    'django.contrib.admin',
+#    'django.contrib.auth',
+#    'django.contrib.contenttypes',
+#    'django.contrib.sessions',
+#    'django.contrib.messages',
+#    'django.contrib.sites',
+#    'django.contrib.staticfiles',
 
     # Third apps
-    'allauth',
-    'allauth.account',
-    'allauth.socialaccount',
+#    'allauth',
+#    'allauth.account',
+#    'allauth.socialaccount',
 
-    'rest_framework',
-    'django_filters',
+#    'rest_framework',
+#    'django_filters',
 
-    'corsheaders',
-    'bootstrap4',
-    'webpack_loader',
+#    'corsheaders',
+#    'bootstrap4',
+#    'webpack_loader',
 
     # Own apps
-    'apps.core',
-    'apps.request_loan'
-]
+#    'apps.core',
+#    'apps.request_loan'
+#]
 
 #############################################
 #  MIDDLEWARE

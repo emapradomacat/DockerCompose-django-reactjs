@@ -7,6 +7,8 @@ services:
       dockerfile: Dockerfile
     ports:
       - 8000:8000
+    volumes:
+      - ./backend:/backend  # Agrega esta línea para mapear el directorio de trabajo del backend en el contenedor
     depends_on:
       - db
   frontend:
