@@ -1,7 +1,7 @@
 # Proyecto Django Reactjs - Craftech
 
-Proyecto con despliegue Dockerizado que contiene una aplicación predeterminada desarrollada en  Django (backend) y React.js (frontend). 
-Este procedimiento es válido para despliegues tanto como locales o en nube, al final se revisarán algunas consideraciones a tener en cuenta para el último caso.
+Despliegue Dockerizado que contiene una aplicación predeterminada desarrollada en  Django (backend) y React.js (frontend). 
+Este procedimiento es válido para despliegues tanto como locales o en nube, con algunas consideraciones a tener en cuenta al trabajar en la nube.
 
 
 ## Estructura
