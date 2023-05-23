@@ -1,7 +1,7 @@
 # Proyecto Django Reactjs - Craftech
 
 Despliegue Dockerizado que contiene una aplicación predeterminada desarrollada en  Django (backend) y React.js (frontend). 
-Este procedimiento es válido para despliegues tanto como locales o en nube, con algunas consideraciones a tener en cuenta al trabajar en la nube.
+Este procedimiento es válido para trabajar tanto de manera local como en la nube, con algunas consideraciones a tener en cuenta si lo hacemos de esta última forma.
 
 
 ## Estructura
@@ -78,7 +78,8 @@ CONTAINER ID   IMAGE                     COMMAND                  CREATED       
 
 http://localhost:3000
 
-¡Y eso es todo! Ahora deberías ver la aplicación funcionando en tu entorno local.
+
+¡Y eso es todo!
 
 
 
@@ -87,7 +88,7 @@ Con el siguiente comando detenemos y eliminamos los contenedores.
 ```
 docker-compose down
 ```
-Para una limpieza total será necesario borrar las imágenes correspondientes al frontend y backend.
+Para una limpieza total será necesario borrar las imágenes correspondientes al frontend, backend y postgres.
 ```
 docker image rm django-reactjs-backend
 docker image rm django-reactjs-frontend
