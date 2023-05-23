@@ -6,26 +6,28 @@ Este procedimiento es válido para despliegues tanto como locales o en nube, al 
 
 ## Estructura
 
-pDockerCompose-django-reactjsroyecto/
-    - README.md
-    - docker-compose.yaml
-    - backend/
-          - apps/
-          - backend/
-          - Dockerfile
-          - manage.py
-          - requirements.txt
-    - frontend/
-          - config/
-          - public/
-          - scripts/
-          - src/
-                - index.js
-                - App.css
-          - Dockerfile
-          - package.json
-          - package-lock.json
-          - yarn.lock
+DockerCompose-django-reactjs/
+- README.md
+- docker-compose.yaml
+- backend/
+  - apps/
+  - backend/ 
+  - Dockerfile
+  - requirements.txt
+  - manage.py
+- frontend/
+   - config/
+   - public/
+   - sctripts/
+   - src/
+     - index.js
+     - App.css
+     - ...
+   - Dockerfile
+   - package.json
+   - package-lock.jason
+   - yarn.lock 
+
 
 ## ***Consideraciones al Desplegar en la Nube***
 Asegúrate de tener en cuenta lo siguiente:
