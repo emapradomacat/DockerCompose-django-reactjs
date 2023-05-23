@@ -4,7 +4,7 @@ Despliegue Dockerizado que contiene una aplicación predeterminada desarrollada 
 Este procedimiento es válido para trabajar tanto de manera local como en la nube, con algunas consideraciones a tener en cuenta si lo hacemos de esta última forma.
 
 
-## Estructura
+## Estructura de Archivos
 
 DockerCompose-django-reactjs/
 - README.md
