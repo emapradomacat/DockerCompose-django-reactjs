@@ -31,7 +31,7 @@ DockerCompose-django-reactjs/
 
 ## ***Consideraciones al Desplegar en la Nube***
 Asegúrate de tener en cuenta lo siguiente:
-- Crear una Cuenta en el proveedor de servicios en la nube (por ejemplo, AWS, Google Cloud, Azure, etc.).
+- Crear una cuenta en el proveedor de servicios en la nube (por ejemplo, AWS, Google Cloud, Azure, etc.).
 - Crear una instancia de servidor virtual (VM) en la nube utilizando la plataforma elegida.
 - A partir de este momento puedes continuar con el procedimiento que se describe a continuación.
   
