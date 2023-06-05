@@ -48,7 +48,7 @@ Asegúrate de tener instalado lo siguiente en tu pc local o instancia en nube an
 
 
 ## Preparación del Entorno de Trabajo
-1. Clonar el repositorio a nuestra área de trabajo
+1. Clonar el repositorio a tu entorno de trabajo
 ```
 git clone https://github.com/emapradomacat/DockerCompose-django-reactjs.git
 ```
@@ -70,9 +70,7 @@ $docker ps
 ```
 CONTAINER ID   IMAGE                     COMMAND                  CREATED          STATUS          PORTS                                       NAMES
 8f1f488913c8   django-reactjs-backend    "python manage.py ru…"   26 seconds ago   Up 22 seconds   0.0.0.0:8000->8000/tcp, :::8000->8000/tcp   django-reactjs-backend-1
-690c3bd883d1   postgres:latest           "docker-entrypoint.s…"   2 hours ago      Up 23 seconds   5432/tcp                                    django-reactjs-db-1
 1553de003682   django-reactjs-frontend   "docker-entrypoint.s…"   2 hours ago      Up 23 seconds   0.0.0.0:3000->3000/tcp, :::3000->3000/tcp   django-reactjs-frontend-1
-
 ```
 5. Una vez que los contenedores estén en ejecución, podrás acceder a la aplicación en tu navegador web en la siguiente dirección:
 
@@ -88,11 +86,10 @@ Con el siguiente comando detenemos y eliminamos los contenedores.
 ```
 docker-compose down
 ```
-Para una limpieza total será necesario borrar las imágenes correspondientes al frontend, backend y postgres.
+Para una limpieza total será necesario borrar las imágenes correspondientes al frontend y backend.
 ```
 docker image rm django-reactjs-backend
 docker image rm django-reactjs-frontend
-docker image rm postgres
 ```
 
 
@@ -103,5 +100,4 @@ docker image rm postgres
 
 Este proyecto fue creado por Emanuel Prado Macat.
 Cualquier consulta a emapradomacat@gmail.com -
-
 
