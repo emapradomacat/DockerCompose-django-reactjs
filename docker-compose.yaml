@@ -5,6 +5,7 @@ services:
     build:
       context: ./frontend
       dockerfile: Dockerfile
+    image: frontend_craftech:1.0  
     ports:
       - 3000:3000
     depends_on:
@@ -14,6 +15,7 @@ services:
     build:
       context: ./backend
       dockerfile: Dockerfile
+    image: backend_craftech:1.0  
     ports:
       - 8000:8000
     volumes:
