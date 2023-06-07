@@ -88,8 +88,8 @@ docker-compose down
 ```
 Para una limpieza total será necesario borrar las imágenes correspondientes al frontend y backend.
 ```
-docker image rm django-reactjs-backend
-docker image rm django-reactjs-frontend
+docker image rm backend_craftech:1.0
+docker image rm frontend_craftech:1.0
 ```
 
 
