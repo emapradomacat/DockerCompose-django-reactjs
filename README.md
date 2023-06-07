@@ -68,9 +68,9 @@ docker-compose up
 $docker ps
 ```
 ```
-CONTAINER ID   IMAGE                     COMMAND                  CREATED          STATUS          PORTS                                       NAMES
-8f1f488913c8   django-reactjs-backend    "python manage.py ru…"   26 seconds ago   Up 22 seconds   0.0.0.0:8000->8000/tcp, :::8000->8000/tcp   django-reactjs-backend-1
-1553de003682   django-reactjs-frontend   "docker-entrypoint.s…"   2 hours ago      Up 23 seconds   0.0.0.0:3000->3000/tcp, :::3000->3000/tcp   django-reactjs-frontend-1
+CONTAINER ID   IMAGE                   COMMAND                  CREATED          STATUS          PORTS                                       NAMES
+324fdfcf05fa   frontend_craftech:1.0   "docker-entrypoint.s…"   14 seconds ago   Up 11 seconds   0.0.0.0:3000->3000/tcp, :::3000->3000/tcp   dockercompose-django-reactjs-frontend-1
+f622e16bf422   backend_craftech:1.0    "python manage.py ru…"   14 seconds ago   Up 12 seconds   0.0.0.0:8000->8000/tcp, :::8000->8000/tcp   dockercompose-django-reactjs-backend-1
 ```
 5. Una vez que los contenedores estén en ejecución, podrás acceder a la aplicación en tu navegador web en la siguiente dirección:
 
